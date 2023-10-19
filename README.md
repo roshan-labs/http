@@ -7,7 +7,7 @@ Find and replace all on all files (CMD+SHIFT+F):
 - Description: My new Nuxt module
 -->
 
-# @roshan-labs/http
+# 🔀 @roshan-labs/http
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -42,7 +42,7 @@ yarn add --dev @roshan-labs/http
 npm install --save-dev @roshan-labs/http
 ```
 
-2. Add `@roshan-labs/http` to the `modules` section of `nuxt.config.ts`
+2. 把 `@roshan-labs/http` 添加进 `nuxt.config.ts` 中 `modules` 选项中
 
 ```js
 export default defineNuxtConfig({
@@ -52,43 +52,43 @@ export default defineNuxtConfig({
 })
 ```
 
-That's it! You can now use My Module in your Nuxt app ✨
+现在你可以在项目中使用此模块了 ✨
 
-## Development
+## 开发
 
 ```bash
-# Install dependencies
+# 安装依赖
 npm install
 
-# Generate type stubs
+# 构建垫片
 npm run dev:prepare
 
-# Develop with the playground
+# 运行演练场模式
 npm run dev
 
-# Build the playground
+# 构建演练场模式
 npm run dev:build
 
-# Run ESLint
+# 运行代码检查
 npm run lint
 
-# Run Vitest
+# 运行测试
 npm run test
 npm run test:watch
 
-# Release new version
+# 发布
 npm run release
 ```
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/my-module/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-version-href]: https://npmjs.com/package/my-module
+[npm-version-href]: https://www.npmjs.com/package/@roshan-labs/http
 
 [npm-downloads-src]: https://img.shields.io/npm/dm/my-module.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-downloads-href]: https://npmjs.com/package/my-module
+[npm-downloads-href]: https://www.npmjs.com/package/@roshan-labs/http
 
 [license-src]: https://img.shields.io/npm/l/my-module.svg?style=flat&colorA=18181B&colorB=28CF8D
-[license-href]: https://npmjs.com/package/my-module
+[license-href]: https://www.npmjs.com/package/@roshan-labs/http
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
