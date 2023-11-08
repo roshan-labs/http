@@ -1,4 +1,3 @@
-import type { FetchOptions } from './types'
 import { Http } from './http'
 import { useRuntimeConfig, effectScope } from '#imports'
 
@@ -17,12 +16,9 @@ const createGlobalState = <F extends (...args: any[]) => any>(func: F): F => {
   }) as F
 }
 
-export const useHttp = createGlobalState((options: FetchOptions = {}) => {
+export const useHttp = createGlobalState(() => {
   const config = useRuntimeConfig()
-  const http = new Http({
-    ...config.public.http,
-    ...options,
-  })
+  const http = new Http(config.public.http)
 
   return http
 })
