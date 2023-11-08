@@ -43,11 +43,15 @@ npm install --save-dev @roshan-labs/http
 export default defineNuxtConfig({
   modules: [
     '@roshan-labs/http'
-  ]
+  ],
 })
 ```
 
 现在你可以在项目中使用此模块了 ✨
+
+## 选项
+
+
 
 ## 开发
 
@@ -75,14 +79,18 @@ npm run test:watch
 npm run release
 ```
 
+## License
+
+MIT
+
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/my-module/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-src]: https://img.shields.io/npm/v/@roshan-labs/http/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-version-href]: https://www.npmjs.com/package/@roshan-labs/http
 
 [npm-downloads-src]: https://img.shields.io/npm/dm/my-module.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-downloads-href]: https://www.npmjs.com/package/@roshan-labs/http
 
-[license-src]: https://img.shields.io/npm/l/my-module.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-src]: https://img.shields.io/npm/l/@roshan-labs/http.svg?style=flat&colorA=18181B&colorB=28CF8D
 [license-href]: https://www.npmjs.com/package/@roshan-labs/http
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
