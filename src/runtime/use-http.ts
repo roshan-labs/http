@@ -1,20 +1,7 @@
+import { createGlobalState } from '@vueuse/core'
+
 import { Http } from './http'
-import { useRuntimeConfig, effectScope } from '#imports'
-
-const createGlobalState = <F extends (...args: any[]) => any>(func: F): F => {
-  let init = false
-  let state: any
-  const scope = effectScope(true)
-
-  return ((...args) => {
-    if (!init) {
-      state = scope.run(() => func(...args))
-      init = true
-
-      return state
-    }
-  }) as F
-}
+import { useRuntimeConfig } from '#imports'
 
 export const useHttp = createGlobalState(() => {
   const config = useRuntimeConfig()

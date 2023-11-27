@@ -37,19 +37,20 @@
     }
   },
   "dependencies": {
-    "@nuxt/kit": "^3.7.4"
+    "@nuxt/kit": "^3.8.2",
+    "@vueuse/core": "^10.6.1"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxt/module-builder": "^0.5.2",
-    "@nuxt/schema": "^3.7.4",
-    "@nuxt/test-utils": "^3.7.4",
+    "@nuxt/module-builder": "^0.5.4",
+    "@nuxt/schema": "^3.8.2",
+    "@nuxt/test-utils": "^3.8.1",
     "@roshan-labs/eslint-config": "^1.4.0",
     "@types/node": "^18.18.1",
     "changelogen": "^0.5.5",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.50.0",
-    "nuxt": "^3.7.4",
+    "eslint": "^8.54.0",
+    "nuxt": "^3.8.2",
     "vitest": "^0.33.0"
   }
 }
