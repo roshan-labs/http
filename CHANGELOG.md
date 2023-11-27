@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/roshan-labs/http/compare/v0.0.2...v0.0.3)
+
+### 🩹 Fixes
+
+- UseHttp 无法重复调用 ([9fdd727](https://github.com/roshan-labs/http/commit/9fdd727))
+
+### 🏡 Chore
+
+- 完善文档 ([361b654](https://github.com/roshan-labs/http/commit/361b654))
+
+### ❤️ Contributors
+
+- XiangGao <392041299@qq.com>
+
 ## v0.0.2
 
 [compare changes](https://github.com/roshan-labs/http/compare/v0.0.1...v0.0.2)
