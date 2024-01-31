@@ -1,8 +1,14 @@
-import type { NitroFetchRequest } from 'nitropack'
+import type { $Fetch } from 'nitropack'
 
-export type FetchOptions<
-  T = any,
-  R extends NitroFetchRequest = NitroFetchRequest
-> = Parameters<typeof $fetch<T, R>>[1]
+export type FetchOptions = NonNullable<Parameters<$Fetch>[1]>
 
 export type Params = Record<string, any>
+
+export interface ModuleOptions {
+  /**
+   * 请求地址前缀
+   *
+   * @default '/'
+   */
+  baseURL?: string
+}

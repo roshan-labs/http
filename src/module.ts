@@ -1,22 +1,25 @@
 import { defineNuxtModule, createResolver, addImports } from '@nuxt/kit'
+import { defu } from 'defu'
 
-// Module options TypeScript interface definition
-export interface ModuleOptions {
-  baseURL?: string
-}
+import type { ModuleOptions } from './runtime/types'
+
+export type { ModuleOptions }
+
+const defaultOptions = {
+  baseURL: '/',
+} satisfies ModuleOptions
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: '@roshan-labs/http',
     configKey: 'http',
   },
-  setup(options, nuxt) {
+  setup(userOptions, nuxt) {
     const { resolve } = createResolver(import.meta.url)
 
-    nuxt.options.runtimeConfig.public.http = {
-      baseURL: '/',
-      ...options,
-    }
+    const options = defu(userOptions, defaultOptions)
+
+    nuxt.options.runtimeConfig.public.http = options
 
     addImports({ name: 'useHttp', from: resolve('./runtime/use-http') })
   },
