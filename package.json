@@ -1,6 +1,6 @@
 {
   "name": "@roshan-labs/http",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Nuxt module for http",
   "repository": "https://github.com/roshan-labs/http",
   "license": "MIT",

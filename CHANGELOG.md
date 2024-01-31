@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/roshan-labs/http/compare/v0.0.3...v0.0.4)
+
+### 🚀 Enhancements
+
+- 新增request, head, options, patch快捷请求 ([29c99f6](https://github.com/roshan-labs/http/commit/29c99f6))
+
+### ❤️ Contributors
+
+- XiangGao <392041299@qq.com>
+
 ## v0.0.3
 
 [compare changes](https://github.com/roshan-labs/http/compare/v0.0.2...v0.0.3)
